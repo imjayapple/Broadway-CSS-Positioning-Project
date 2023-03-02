@@ -3,6 +3,8 @@ html, body {
     padding: 0;
   }
   
+  /* Top Navigation Links */
+
   header {
     background-color: #333333;
   }
@@ -19,6 +21,8 @@ html, body {
     font-size: 12px;
   }
   
+  /* Welcome Card */
+
   main {
     text-align: center;
   }
@@ -34,18 +38,8 @@ html, body {
     text-transform: uppercase;
   }
   
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
-  }
-  
-  footer p {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 11px;
-  }
-  
+  /* Main Body */
+
   .container {
     max-width: 940px;
     margin: 0 auto;
@@ -136,4 +130,19 @@ html, body {
     .supporting .col {
       width: 100%;
     }
-  }
+}
+
+    /* Footer Section */
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    }
+    
+  footer p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    }
+  
