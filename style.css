@@ -7,11 +7,16 @@ html, body {
 
   header {
     background-color: #333333;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
   
   nav {
     margin: 0;
     padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
   }
   
   nav li {
@@ -19,12 +24,24 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 12px;
+    display: inline-block;
+    width: 80px;
   }
   
+  nav a {
+    color: white;
+  }
+
+  nav a:hover {
+    color: #F7E479;
+  }
+
   /* Welcome Card */
 
   main {
     text-align: center;
+    position: relative;
+    top: 80px;
   }
   
   main h1 {
@@ -37,16 +54,20 @@ html, body {
     margin-bottom: 80px;
     text-transform: uppercase;
   }
+
+  .jumbotron .container a:hover {
+    color: #333;
+    background-color: #F7F7F7;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+
+  h1.btn-main :hover {
+    font-weight: 600px;
+  }
   
   /* Main Body */
 
-  .container {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
-  }
-  
   .jumbotron {
     height: 800px;
     background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
@@ -80,15 +101,33 @@ html, body {
   }
   
   .supporting {
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 110px;
+    padding-bottom: 150px;
   }
   
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Design Develop Deploy containers */
+
   .supporting .col {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    display: inline-block;
+    width: 225px;
   }
   
+  .supporting .col a:hover {
+    color: white;
+    background-color: #333;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+
   .supporting img {
     height: 32px;
   }
@@ -138,6 +177,9 @@ html, body {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
     }
     
   footer p {
