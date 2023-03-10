@@ -118,6 +118,10 @@ html, body {
     text-align: center;
   }
 
+  .jumbotron .container {
+    margin: 150px auto;
+  }
+
   /* Design Develop Deploy containers */
 
   .supporting .col {
