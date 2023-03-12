@@ -81,6 +81,11 @@ html, body {
     background-size: cover;
   }
   
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: #333}
+  }
+
   .btn-main {
     background-color: #333;
     color: #fff;
@@ -91,6 +96,8 @@ html, body {
     padding: 16px 40px;
     text-decoration: none;
     text-transform: uppercase;
+    animation-name: example;
+    animation-duration: 4s;
   }
   
   .btn-default {
